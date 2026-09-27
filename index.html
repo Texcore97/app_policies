@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClippedHQ</title>
+<style>
+  :root {
+    --ink: #1c1d1f;
+    --muted: #55585e;
+    --line: #e3e4e7;
+    --bg: #fbfbfa;
+    --accent: #3457d5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+    letter-spacing: -0.01em;
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin-bottom: 2.2em;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 2.2em;
+    margin-bottom: 0.6em;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid var(--line);
+  }
+  p, li { color: #2b2d31; }
+  ul { padding-left: 1.3em; }
+  li { margin-bottom: 0.5em; }
+  a { color: var(--accent); }
+  .placeholder {
+    background: #fff3cd;
+    padding: 0 4px;
+    border-radius: 3px;
+  }
+  .links {
+    display: flex;
+    gap: 12px;
+    margin-top: 1.5em;
+  }
+  .links a {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  footer {
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>ClippedHQ</h1>
+  <p class="tagline">A personal automation tool that turns Twitch VODs into short highlight clips.</p>
+
+  <h2>What it does</h2>
+  <p>
+    ClippedHQ watches a list of Twitch channels. When a tracked stream ends,
+    it downloads the VOD, automatically finds likely highlight moments using
+    chat activity and audio loudness, cuts short clips from those moments,
+    and publishes them to connected platforms &mdash; including posting to
+    TikTok on the operator's behalf via TikTok's Content Posting API.
+  </p>
+
+  <h2>Who runs it</h2>
+  <p>
+    ClippedHQ is operated by <span class="placeholder">Tex</span> for
+    personal / small-scale use. It only connects to accounts that have
+    explicitly authorized it through each platform's own login flow.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    <span class="placeholder">clipped.hq.xyz@gmail.com</span>
+  </p>
+
+  <div class="links">
+    <a href="./privacy-policy.html">Privacy Policy</a>
+    <a href="./terms-of-service.html">Terms of Service</a>
+  </div>
+
+  <footer>
+    &copy; <span class="placeholder">2026</span> ClippedHQ
+  </footer>
+</main>
+</body>
+</html>
